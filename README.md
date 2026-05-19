@@ -18,7 +18,7 @@ This repository contains a basic web project with a starter `index.html` file an
 
 ## Author
 
-- **Hapizan**
+- **Ahmad**
 
 ## License
 

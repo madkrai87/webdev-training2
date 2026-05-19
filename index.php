@@ -5,8 +5,8 @@ $email_from_browser = $_GET['email'] ?? '';
 $message_from_browser = $_GET['message'] ?? '';
 
 // Declare constants for Supabase API
-$URL = 'https://enmpmbgeayoptjcpatoz.supabase.co/rest/v1';
-$KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVubXBtYmdlYXlvcHRqY3BhdG96Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkxMzU4MDQsImV4cCI6MjA5NDcxMTgwNH0.Mx6mFvrPNoMUj1kpRzj5Qeb7Xb4tlAl32GOJlWMlGSM';
+$URL = 'https://kwtikusztagedqiibznw.supabase.co';
+$KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt3dGlrdXN6dGFnZWRxaWliem53Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkxNjkwODYsImV4cCI6MjA5NDc0NTA4Nn0.TPpfIr1vQYopL5fCXoxV4UPbvGsR7CaorqZSEzVZS18';
 
 // Insert a new record into the 'contacts' table
 $data = json_encode([
