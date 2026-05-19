@@ -15,15 +15,15 @@ if (empty($name) || empty($email) || empty($message) || !filter_var($email, FILT
     die("Invalid input.");
 }
 
-$URL ='https://kwtikusztagedqiibznw.supabase.co';
-$SERVICE_ROLE_KEY ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt3dGlrdXN6dGFnZWRxaWliem53Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3OTE2OTA4NiwiZXhwIjoyMDk0NzQ1MDg2fQ.C5q_AfBMK4hMbkTe2QAsgmNHLFR7UIixyUXxTbPJyvQ';
-// $SERVICE_ROLE_KEY = getenv('SUPABASE_SERVICE_ROLE_KEY');
+require_once __DIR__ . '/supabase_config.php';
+
+$URL = SUPABASE_URL . '/rest/v1/contacts';
+$SERVICE_ROLE_KEY = SUPABASE_SERVICE_ROLE_KEY;
 
 if (empty($SERVICE_ROLE_KEY)) {
     die("Supabase service role key not configured. Set SUPABASE_SERVICE_ROLE_KEY.");
 }
 
-// RLS is enabled on the contacts table. A service role key is required for server-side inserts.
 $data = json_encode([
     'name' => $name,
     'email' => $email,
