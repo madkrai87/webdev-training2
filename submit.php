@@ -15,8 +15,8 @@ if (empty($name) || empty($email) || empty($message) || !filter_var($email, FILT
     die("Invalid input.");
 }
 
-$URL = 'https://kwtikusztagedqiibznw.supabase.co';
-$SERVICE_ROLE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt3dGlrdXN6dGFnZWRxaWliem53Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkxNjkwODYsImV4cCI6MjA5NDc0NTA4Nn0.TPpfIr1vQYopL5fCXoxV4UPbvGsR7CaorqZSEzVZS18';
+$URL ='https://kwtikusztagedqiibznw.supabase.co';
+$SERVICE_ROLE_KEY ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt3dGlrdXN6dGFnZWRxaWliem53Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkxNjkwODYsImV4cCI6MjA5NDc0NTA4Nn0.TPpfIr1vQYopL5fCXoxV4UPbvGsR7CaorqZSEzVZS18';
 // $SERVICE_ROLE_KEY = getenv('SUPABASE_SERVICE_ROLE_KEY');
 
 if (empty($SERVICE_ROLE_KEY)) {
